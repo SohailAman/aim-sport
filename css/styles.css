@@ -275,8 +275,7 @@ h5 span {
 @media screen and (min-width: 1440px) {
   .goal-section .num-image-2 {
     right: 520px !important;
-  } 
-  
+  }
 }
 .goal-section .num-image-2 {
   position: absolute;
@@ -367,6 +366,8 @@ h5 span {
   transition: all ease-in 0.7s;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .swiper-slide:nth-child(1) .slide1 {

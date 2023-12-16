@@ -1,5 +1,4 @@
-const swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
+const swiper = new Swiper(".mySwiper", { 
   spaceBetween: 0,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -15,6 +14,9 @@ const swiper = new Swiper(".mySwiper", {
     768: {
       slidesPerView: 3,
     },
+    1024: {
+      slidesPerView: 4,
+    },
   },
 });
 
@@ -22,54 +24,244 @@ const swiper = new Swiper(".mySwiper", {
 const galleryData = [
   {
     slide1: {
-      src: "./assets/766443_e02c744d261d422097311e89df4ea1fb~mv2.webp",
+      src: "./assets/E1 Race Bird/E1 1.jpg",
       text: "E1 Seabird",
     },
     slide2: {
-      src: "./assets/766443_657a7f965ea14bbba1eb8ed7a5708315~mv2.webp",
+      src: "./assets/Saudi 2018 FE/Saudi 2018 FE 1.jpg",
       text: "Extreme E Saudi 2023",
     },
   },
   {
     slide1: {
-      src: "./assets/766443_ac236c2082394f80bd0e92a600c3701c~mv2.webp",
+      src: "./assets/Saudi 2019 FE/Saudi 2019 FE 1.jpg",
       text: "Formula E Saudi 2023",
     },
     slide2: {
-      src: "./assets/766443_9fc7fadbe7de49e6903f0f3d24e5cecb~mv2.webp",
+      src: "./assets/Saudi 2021 FE/Saudi 2021 FE 1.jpg",
       text: "Extreme E Saudi 2022",
     },
   },
   {
     slide1: {
-      src: "./assets/766443_0251c1b0b3554731a94b825ccdea3a3d~mv2.webp",
+      src: "./assets/Saudi 2022 FE/Saudi 2022 FE 1.jpg",
       text: "Formula E Saudi 2022",
     },
     slide2: {
-      src: "./assets/766443_d317787406ec481289ba36f42ef2e373~mv2.webp",
+      src: "./assets/Saudi 2021 XE/Saudi 2021 XE 1.jpg",
       text: "Extreme E Saudi 2021",
     },
   },
   {
     slide1: {
-      src: "./assets/766443_580959fb73074d558d7dd029b729ca9d~mv2 (1).webp",
+      src: "./assets/Saudi 2022 XE/Saudi 2022 XE 1.png",
       text: "Formula E Saudi 2021",
     },
     slide2: {
-      src: "./assets/766443_25f73ce805bd4a63bd3329ebd2ab9dee~mv2 (1).webp",
+      src: "./assets/Saudi 2023 FE/Saudi 2023 FE 1.jpg",
       text: "Formula E Saudi 2019",
     },
   },
   {
     slide1: {
-      src: "./assets/766443_39f741c800ba4587bd7bbe5e34a67305~mv2.webp",
+      src: "./assets/Saudi 2023 XE/Saudi 2023 XE 1.jpg",
       text: "Formula E Saudi 2018",
     },
     slide2: {
-      src: "./assets/766443_5835086668fd4ce187a4f32d93073687~mv2 (1).webp",
+      src: "./assets/Vegas 2017 FE eSports/Vegas 2017 FE Esports 1.jpg",
       text: "Formula E eSports Vegas 2017",
     },
   },
+  {
+    slide1: {
+      src: "./assets/E1 Race Bird/E1 2.jpg",
+      text: "E1 Seabird",
+    },
+    slide2: {
+      src: "./assets/E1 Race Bird/E1 3.jpg",
+      text: "E1 Seabird",
+    },
+  },
+  {
+    slide1: {
+      src: "./assets/E1 Race Bird/E1 4.jpg",
+      text: "E1 Seabird",
+    },
+    slide2: {
+      src: "./assets/Saudi 2022 FE/Saudi 2022 FE 2.jpg",
+      text: "Formula E Saudi 2022",  
+    },
+  },
+  {
+    slide1: {
+      src: "./assets/Saudi 2018 FE/Saudi 2018 FE 2.jpg",
+      text: "Formula E Saudi 2018",
+    },
+    slide2: {
+      src: "./assets/Saudi 2018 FE/Saudi 2018 FE 3.jpg",
+      text: "Formula E Saudi 2018",
+    },
+  },
+  {
+    slide1: {
+      src: "./assets/Saudi 2018 FE/Saudi 2018 FE 4.jpg",
+      text: "Formula E Saudi 2018",
+    },
+    slide2: {
+      src: "./assets/Saudi 2018 FE/Saudi 2018 FE 5.jpg",
+      text: "Formula E Saudi 2018",
+    },
+  },
+  {
+    slide1: {
+      src: "./assets/Saudi 2018 FE/Saudi 2018 FE 12.jpg",
+      text: "Formula E Saudi 2018",
+    },
+    slide2: {
+      src: "./assets/Saudi 2018 FE/Saudi 2018 FE 7.jpg",
+      text: "Formula E Saudi 2018",
+    },
+  },
+  {
+    slide1: {
+      src: "./assets/Saudi 2018 FE/Saudi 2018 FE 8.jpg",
+      text: "Formula E Saudi 2018",
+    },
+    slide2: {
+      src: "./assets/Saudi 2018 FE/Saudi 2018 FE 9.jpg",
+      text: "Formula E Saudi 2018",
+    },
+  },
+  {
+    slide1: {
+      src: "./assets/Saudi 2019 FE/Saudi 2019 FE 2.jpg",
+      text: "Formula E Saudi 2019",
+    },
+    slide2: {
+      src: "./assets/Saudi 2019 FE/Saudi 2019 FE 3.jpg",
+      text: "Formula E Saudi 2019",
+    },
+  },
+  {
+    slide1: {
+      src: "./assets/Saudi 2021 FE/Saudi 2021 FE 2.jpg",
+      text: "Formula E Saudi 2021",
+    },
+    slide2: {
+      src: "./assets/Saudi 2021 FE/Saudi 2021 FE 3.jpg",
+      text: "Extreme E Saudi 2021",
+    },
+  },
+  {
+    slide1: {
+      src: "./assets/Saudi 2021 FE/Saudi 2021 FE 4.jpg",
+      text: "Extreme E Saudi 2021",
+    },
+    slide2: {
+      src: "./assets/Saudi 2021 FE/Saudi 2021 FE 5.jpg",
+      text: "Extreme E Saudi 2021",
+    },
+  },
+  {
+    slide1: {
+      src: "./assets/Saudi 2021 XE/Saudi 2021 XE 2.jpg",
+      text: "Extreme E Saudi 2021",
+    },
+    slide2: {
+      src: "./assets/Saudi 2021 XE/Saudi 2021 XE 3.jpg",
+      text: "Extreme E Saudi 2021",
+    },
+  },
+  {
+    slide1: {
+      src: "./assets/E1 Race Bird/E1 5.jpg",
+      text: "E1 Seabird",
+    },
+    slide2: {
+      src: "./assets/Saudi 2022 FE/Saudi 2022 FE 3.jpg",
+      text: "Formula E Saudi 2022",
+    },
+  },
+  {
+    slide1: {
+      src: "./assets/Saudi 2022 FE/Saudi 2022 FE 4.jpg",
+      text: "Formula E Saudi 2022",
+    },
+    slide2: {
+      src: "./assets/Saudi 2022 FE/Saudi 2022 FE 5.jpg",
+      text: "Formula E Saudi 2022",
+    },
+  },
+  {
+    slide1: {
+      src: "./assets/Saudi 2022 XE/Saudi 2022 XE 2.jpg",
+      text: "Extreme E Saudi 2022",
+    },
+    slide2: {
+      src: "./assets/Saudi 2022 XE/Saudi 2022 XE 3.jpg",
+      text: "Extreme E Saudi 2022",
+    },
+  },
+  {
+    slide1: {
+      src: "./assets/Vegas 2017 FE eSports/Vegas 2017 FE eSports 4.jpg",
+      text: "Vegas 2017 FE eSports",
+    },
+    slide2: {
+      src: "./assets/Saudi 2022 XE/Saudi 2022 XE 5.jpg",
+      text: "Extreme E Saudi 2022",
+    },
+  },
+  {
+    slide1: {
+      src: "./assets/Saudi 2022 XE/Saudi 2022 XE 6.jpg",
+      text: "Extreme E Saudi 2022",
+    },
+    slide2: {
+      src: "./assets/Saudi 2023 FE/Saudi 2023 FE 2.jpg",
+      text: "Formula E Saudi 2023",
+    },
+  },
+  {
+    slide1: {
+      src: "./assets/Saudi 2023 FE/Saudi 2023 FE 3.jpg",
+      text: "Formula E Saudi 2023",
+    },
+    slide2: {
+      src: "./assets/Saudi 2023 FE/Saudi 2023 FE 4.jpg",
+      text: "Formula E Saudi 2023",
+    },
+  },
+  {
+    slide1: {
+      src: "./assets/Saudi 2023 FE/Saudi 2023 FE 5.jpg",
+      text: "Formula E Saudi 2023",
+    },
+    slide2: {
+      src: "./assets/Saudi 2023 XE/Saudi 2023 XE 2.jpg",
+      text: "Extreme E Saudi 2023",
+    },
+  },
+  {
+    slide1: {
+      src: "./assets/Saudi 2023 XE/Saudi 2023 XE 3.jpg",
+      text: "Extreme E Saudi 2023",
+    },
+    slide2: {
+      src: "./assets/Saudi 2023 XE/Saudi 2023 XE 4.jpg",
+      text: "Extreme E Saudi 2023",
+    },
+  },
+  {
+    slide1: {
+      src: "./assets/Saudi 2023 XE/Saudi 2023 XE 5.jpg",
+      text: "Extreme E Saudi 2023",
+    },
+    slide2: {
+      src: "./assets/Vegas 2017 FE eSports/Vegas 2017 FE eSports 2.jpg",
+      text: "Vegas 2017 Formula E 2023",
+    },
+  }, 
   // Add more items as needed
 ];
 
@@ -120,10 +312,9 @@ function openModal(index) {
     </div>
     <div class="col-lg-4 col-md-12 px-0">
       <h1>${currentItem.text}</h1>
-      <a href="#">See all images of the ${currentItem.text}</a>
+      <a href="#">images of the ${currentItem.text}</a>
     </div>`;
 }
-
 
 modalContent.addEventListener("swiped-right", () => {
   navigateModal(-1);
@@ -146,7 +337,7 @@ function navigateModal(direction) {
   openModal(currentIndex);
 }
 
-document.addEventListener("DOMContentLoaded", function () { 
+document.addEventListener("DOMContentLoaded", function () {
   const modalImage = document.getElementById("modalImage");
   const prevImageBtn = document.getElementById("prevImage");
   const nextImageBtn = document.getElementById("nextImage");
