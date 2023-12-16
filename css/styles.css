@@ -213,8 +213,7 @@ h5 span {
 .about-section .num-image {
   position: absolute;
   top: 34px;
-  left: 230px;
-
+  left: 180px;
   width: 191px;
   height: 160px;
   object-fit: cover;
@@ -273,10 +272,16 @@ h5 span {
 .goal-section {
   padding-bottom: 100px;
 }
+@media screen and (min-width: 1440px) {
+  .goal-section .num-image-2 {
+    right: 520px !important;
+  } 
+  
+}
 .goal-section .num-image-2 {
   position: absolute;
   top: 12px;
-  right: 590px;
+  right: 480px;
   width: 260px;
   height: 176px;
   object-position: 50% 50%;
