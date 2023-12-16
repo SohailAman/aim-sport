@@ -65,7 +65,7 @@ body {
   font-size: 14px;
   transition: all ease 0.5s;
 }
-.navbar .navbar-nav .nav-link:hover{
+.navbar .navbar-nav .nav-link:hover {
   color: #f8be58;
   text-decoration: underline;
   letter-spacing: 3px;
@@ -190,8 +190,8 @@ h5 span {
   .Partners-section .Partners-cont .row {
     gap: 10px;
   }
-  .Partners-section{
-    margin-top:40px;
+  .Partners-section {
+    margin-top: 40px;
   }
 }
 
@@ -234,7 +234,7 @@ h5 span {
 }
 @media screen and (max-width: 767px) {
   .reverse-order {
-    order: 1; 
+    order: 1;
     margin-top: 70px;
   }
   .about-two {
@@ -264,7 +264,6 @@ h5 span {
     position: absolute;
     top: 60px;
   }
-  
 }
 /* goal secion start */
 .goal-section {
@@ -310,7 +309,7 @@ h5 span {
   }
 }
 @media screen and (max-width: 767px) {
-  .seabird-img{
+  .seabird-img {
     width: 273px;
     height: 308px;
     object-fit: cover;
@@ -461,7 +460,10 @@ h5 span {
 }
 /* media Query */
 @media screen and (max-width: 767px) {
-  .gallery-section h5{
+  .swiper-slide {
+    width: 100% !important;
+  }
+  .gallery-section h5 {
     margin-left: 18px !important;
   }
 }
@@ -579,7 +581,7 @@ h5 span {
   box-shadow: none;
   border-color: black;
 }
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
   .contact-cont {
     margin-top: 85px;
     padding: 0 40px;
@@ -619,10 +621,14 @@ footer ul li {
     display: none;
   }
   .footer-col1 {
-  
     margin-top: 20px;
   }
-  
+  #swiperBtnPrev,
+  #swiperBtnNext,
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
 }
 /* modal section start */
 .modal-dialog {
@@ -646,6 +652,9 @@ footer ul li {
   transition: all 0.2s linear;
   position: relative;
   border: unset !important;
+}
+.modal-dialog .modal-content .close-btn.back-btn{
+  display: none;
 }
 .modal-dialog .modal-content .close-btn {
   position: absolute;
@@ -707,4 +716,12 @@ footer ul li {
     width: 828px;
     height: unset !important;
   }
+  .modal-dialog .modal-content .close-btn{
+    display: none;
+  }
+  .modal-dialog .modal-content .close-btn.back-btn{
+    left: 16px !important;
+    display: block;
+  }
+  
 }

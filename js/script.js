@@ -104,25 +104,32 @@ galleryData.forEach((item, index) => {
 });
 
 // Function to open modal with dynamic content
+const modalContent = document.getElementById("modal-content");
 function openModal(index) {
   currentIndex = index; // Update the current index
 
-  const modalContent = document.getElementById("modal-content");
   const currentItem = flatGalleryData[currentIndex];
 
   modalContent.innerHTML = `
-    <div class="col-lg-8 col-md-12 d-flex align-items-center">
-      <i class="bi bi-chevron-left me-5" onclick="navigateModal(-1)"></i>
+    <div class="col-lg-8 col-md-12 px-0 d-flex align-items-center">
+      <i class="bi bi-chevron-left me-5" id="swiperBtnPrev" onclick="navigateModal(-1)"></i>
       <div class="img-cont">
         <img src="${currentItem.src}" alt="" width="100%">
       </div>
-      <i class="bi bi-chevron-right ms-5" onclick="navigateModal(1)"></i>
+      <i class="bi bi-chevron-right ms-5" id="swiperBtnNext" onclick="navigateModal(1)"></i>
     </div>
-    <div class="col-lg-4 col-md-12">
+    <div class="col-lg-4 col-md-12 px-0">
       <h1>${currentItem.text}</h1>
       <a href="#">See all images of the ${currentItem.text}</a>
     </div>`;
 }
+
+
+modalContent.addEventListener("swiped-right", () => {
+  navigateModal(-1);
+  console.log("delll");
+});
+modalContent.addEventListener("swiped-left", () => navigateModal(1));
 
 // Function to navigate within the modal
 function navigateModal(direction) {
@@ -139,13 +146,11 @@ function navigateModal(direction) {
   openModal(currentIndex);
 }
 
-
-
-document.addEventListener('DOMContentLoaded', function () {
-  const modalImage = document.getElementById('modalImage');
-  const prevImageBtn = document.getElementById('prevImage');
-  const nextImageBtn = document.getElementById('nextImage');
-  const images = document.querySelectorAll('.seabird-img');
+document.addEventListener("DOMContentLoaded", function () { 
+  const modalImage = document.getElementById("modalImage");
+  const prevImageBtn = document.getElementById("prevImage");
+  const nextImageBtn = document.getElementById("nextImage");
+  const images = document.querySelectorAll(".seabird-img");
 
   let currentIndex = 0;
 
@@ -167,12 +172,12 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Event listeners for previous and next buttons
-  prevImageBtn.addEventListener('click', () => changeImage(-1));
-  nextImageBtn.addEventListener('click', () => changeImage(1));
+  prevImageBtn.addEventListener("click", () => changeImage(-1));
+  nextImageBtn.addEventListener("click", () => changeImage(1));
 
   // Event listener for each image in the seabird section
   images.forEach((image, index) => {
-    image.addEventListener('click', () => {
+    image.addEventListener("click", () => {
       currentIndex = index;
       updateModalContent(currentIndex);
     });
