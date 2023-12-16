@@ -7,7 +7,11 @@
   padding: 0;
   font-family: "Outfit", sans-serif;
 }
+html {
+  overflow-x: hidden;
+}
 body {
+  overflow-x: hidden;
   background-color: #0b1d26;
   color: #fff;
 }
@@ -463,6 +467,10 @@ h5 span {
   .swiper-slide {
     width: 100% !important;
   }
+  .swiper-slide > div {
+    width: 100% !important;
+    max-width: 420px;
+  }
   .gallery-section h5 {
     margin-left: 18px !important;
   }
@@ -653,7 +661,7 @@ footer ul li {
   position: relative;
   border: unset !important;
 }
-.modal-dialog .modal-content .close-btn.back-btn{
+.modal-dialog .modal-content .close-btn.back-btn {
   display: none;
 }
 .modal-dialog .modal-content .close-btn {
@@ -716,12 +724,11 @@ footer ul li {
     width: 828px;
     height: unset !important;
   }
-  .modal-dialog .modal-content .close-btn{
+  .modal-dialog .modal-content .close-btn {
     display: none;
   }
-  .modal-dialog .modal-content .close-btn.back-btn{
+  .modal-dialog .modal-content .close-btn.back-btn {
     left: 16px !important;
     display: block;
   }
-  
 }
