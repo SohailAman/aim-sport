@@ -43,7 +43,7 @@ body {
   width: 100%;
   background-color: rgba(11, 29, 38, 0.8);
   position: fixed !important;
-  z-index: 11;
+  z-index: 9999;
 }
 .navbar .nav-container {
   background-color: rgba(11, 29, 38, 0.8);
