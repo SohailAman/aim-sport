@@ -1,3 +1,12 @@
+const navLinks = document.querySelectorAll(".nav-link");
+const navbarNav = document.getElementById("navbarNav");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navbarNav.classList.remove("show");
+  });
+});
+
 const swiper = new Swiper(".mySwiper", {
   spaceBetween: 0,
   navigation: {
@@ -61,56 +70,58 @@ const galleryData = [
       key: 1,
     },
     slide2: {
-      src: "./assets/Saudi 2018 FE/Saudi 2018 FE 1.jpg",
-      text: "Formula E Saudi 2018",
+      src: "./assets/Saudi 2023 XE/Saudi 2023 XE 1.jpg",
+      text: "Extreme E Saudi 2023",
+
       key: 2,
     },
   },
   {
     slide1: {
-      src: "./assets/Saudi 2019 FE/Saudi 2019 FE 1.jpg",
-      text: "Formula E Saudi 2019 ",
+      src: "./assets/Saudi 2023 FE/Saudi 2023 FE 1.jpg",
+      text: "Formula E Saudi 2023",
       key: 3,
     },
     slide2: {
-      src: "./assets/Saudi 2021 FE/Saudi 2021 FE 1.jpg",
-      text: "Formula E Saudi 2021",
+      src: "./assets/Saudi 2022 XE/Saudi 2022 XE 1.png",
+      text: "Extreme E Saudi 2022",
+
       key: 4,
     },
   },
   {
     slide1: {
-      src: "./assets/Saudi 2021 XE/Saudi 2021 XE 1.jpg",
-      text: "Extreme E Saudi 2021",
+      src: "./assets/Saudi 2022 FE/Saudi 2022 FE 1.jpg",
+      text: "Formula E Saudi 2022",
       key: 5,
     },
     slide2: {
-      src: "./assets/Saudi 2022 FE/Saudi 2022 FE 1.jpg",
-      text: "Formula E Saudi 2022",
+      src: "./assets/Saudi 2021 XE/Saudi 2021 XE 1.jpg",
+      text: "Extreme E Saudi 2021",
       key: 6,
     },
   },
   {
     slide1: {
-      src: "./assets/Saudi 2022 XE/Saudi 2022 XE 1.png",
-      text: "Extreme E Saudi 2022",
+      src: "./assets/Saudi 2021 FE/Saudi 2021 FE 1.jpg",
+      text: "Formula E Saudi 2021",
       key: 7,
     },
     slide2: {
-      src: "./assets/Saudi 2023 FE/Saudi 2023 FE 1.jpg",
-      text: "Formula E Saudi 2023",
+      src: "./assets/Saudi 2019 FE/Saudi 2019 FE 1.jpg",
+      text: "Formula E Saudi 2019 ",
       key: 8,
     },
   },
   {
     slide1: {
-      src: "./assets/Saudi 2023 XE/Saudi 2023 XE 1.jpg",
-      text: "Extreme E Saudi 2023",
+      src: "./assets/Saudi 2018 FE/Saudi 2018 FE 1.jpg",
+      text: "Formula E Saudi 2018",
       key: 9,
     },
     slide2: {
       src: "./assets/Vegas 2017 FE eSports/Vegas 2017 FE Esports 1.jpg",
-      text: "Formula E vegas 2019",
+      text: "2017 Vegas eSports",
       key: 10,
     },
   },
@@ -425,28 +436,28 @@ function openModal(index) {
       currentArray = E1Seabirds;
       break;
     case 2:
-      currentArray = Saudi18FE;
+      currentArray = Saudi23XE;
       break;
     case 3:
-      currentArray = Saudi19FE;
-      break;
-    case 4:
-      currentArray = Saudi21FE;
-      break;
-    case 5:
-      currentArray = Saudi21XE;
-      break;
-    case 6:
-      currentArray = Saudi22FE;
-      break;
-    case 7:
-      currentArray = Saudi22XE;
-      break;
-    case 8:
       currentArray = Saudi23FE;
       break;
+    case 4:
+      currentArray = Saudi22XE;
+      break;
+    case 5:
+      currentArray = Saudi22FE;
+      break;
+    case 6:
+      currentArray = Saudi21XE;
+      break;
+    case 7:
+      currentArray = Saudi21FE;
+      break;
+    case 8:
+      currentArray = Saudi19FE;
+      break;
     case 9:
-      currentArray = Saudi23XE;
+      currentArray = Saudi18FE;
       break;
     case 10:
       currentArray = Vegas17FE;
